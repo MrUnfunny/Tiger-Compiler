@@ -27,3 +27,17 @@ U_boolList U_BoolList(bool head, U_boolList tail)
   list->tail = tail;
   return list;
 }
+
+/*
+  *Author: Mohit Singh
+  *1 November, 2020
+  */
+
+ Table_ Table(string id, int value, Table_ tail){
+   Table_ t = malloc(sizeof(*t));
+   t->id=id;
+   t->value=value;
+   t->tail=tail;
+
+   return t;
+ }

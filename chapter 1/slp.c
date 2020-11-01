@@ -56,5 +56,30 @@ A_expList A_LastExpList(A_exp last) {
   return e;
 }
 
+/*
+  *Author: Mohit Singh
+  *1 November, 2020
+  */
 
+Table_ update(Table_ t, string id, int value){
+  Table_ newt= malloc(sizeof(*newt));
+  newt->id=id;
+  newt->value;
+  newt->tail= t;
+
+  return newt;
+}
+
+int lookup(Table_ t, string key){
+  Table_ table = t;
+
+  while(table){
+    if(table->id == key){
+      return table->value;
+    }
+    table=table->tail;
+  }
+  printf("Key :%s not found in table ",key);
+  exit (0);
+}
 
